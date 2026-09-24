@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a free call | Layman's Ledger</title>
+  <meta name="description" content="Book a free 30-minute call with Layman's Ledger. Bookkeeping for small businesses, in person around [Your City] or online anywhere.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Book a free call | Layman's Ledger">
+  <meta property="og:description" content="Book a free 30-minute call with Layman's Ledger. Bookkeeping for small businesses, in person around [Your City] or online anywhere.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Kalam:wght@400;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="Layman's Ledger home">
+        <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="7" fill="#182338"/><path d="M8 11h18M8 17h11M8 23h9" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><path d="M19.5 23.2l2.6 2.6 5.4-6.8" fill="none" stroke="#FFE88A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Layman's Ledger
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span class="visually-hidden">Menu</span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a class="btn btn--small" href="contact.html">Book a free call</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Book a free call.</h1>
+        <p class="lede">Tell us a little about your business and we'll reply within one business day to find a time. Thirty minutes, no cost, no pitch.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-label="Contact form">
+      <div class="wrap contact-grid">
+        <div>
+          <!-- Connect this form: create a free form at formspree.io and replace YOUR_FORM_ID below. -->
+          <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate data-contact-form>
+            <div class="field-row">
+              <div class="field">
+                <label class="label" for="name">Your name</label>
+                <input class="input" id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+                <p class="error-msg" id="name-error" aria-live="polite"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5v.01"/></svg><span></span></p>
+              </div>
+              <div class="field">
+                <label class="label" for="email">Email</label>
+                <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+                <p class="error-msg" id="email-error" aria-live="polite"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5v.01"/></svg><span></span></p>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label class="label" for="phone">Phone <span class="opt">(optional)</span></label>
+                <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+              </div>
+              <div class="field">
+                <label class="label" for="business">Business name <span class="opt">(optional)</span></label>
+                <input class="input" id="business" name="business" type="text" autocomplete="organization">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label" for="kind">What does your business do? <span class="opt">(optional)</span></label>
+              <input class="input" id="kind" name="kind" type="text" aria-describedby="kind-help">
+              <p class="help" id="kind-help">A few words is plenty, like "landscaping" or "two coffee shops".</p>
+            </div>
+            <fieldset class="chips">
+              <legend class="label">How are your books right now? <span class="opt">(optional)</span></legend>
+              <label class="chip"><input type="radio" name="books" value="A shoebox of receipts"><span>A shoebox of receipts</span></label>
+              <label class="chip"><input type="radio" name="books" value="A spreadsheet"><span>A spreadsheet</span></label>
+              <label class="chip"><input type="radio" name="books" value="Software, but behind"><span>Software, but behind</span></label>
+              <label class="chip"><input type="radio" name="books" value="In decent shape"><span>In decent shape</span></label>
+            </fieldset>
+            <fieldset class="chips">
+              <legend class="label">How would you like to talk? <span class="opt">(optional)</span></legend>
+              <label class="chip"><input type="radio" name="meet" value="In person"><span>In person</span></label>
+              <label class="chip"><input type="radio" name="meet" value="Video call"><span>Video call</span></label>
+              <label class="chip"><input type="radio" name="meet" value="Phone"><span>Phone</span></label>
+              <label class="chip"><input type="radio" name="meet" value="No preference"><span>No preference</span></label>
+            </fieldset>
+            <div class="field">
+              <label class="label" for="message">Anything else we should know? <span class="opt">(optional)</span></label>
+              <textarea class="textarea" id="message" name="message" rows="5"></textarea>
+            </div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+            <div>
+              <button class="btn" type="submit">Request my free call</button>
+              <p class="form-status" role="status" aria-live="polite" style="margin-top:1rem"></p>
+            </div>
+          </form>
+          <div class="form-success" data-form-success hidden tabindex="-1">
+            <h2>Got it. Talk soon.</h2>
+            <p>We'll email you within one business day to set up your free call.</p>
+            <p class="hand" style="font-size:1.25rem">in the meantime, no need to tidy anything up.</p>
+          </div>
+        </div>
+
+        <aside class="aside-card" aria-labelledby="next-title">
+          <h2 id="next-title">What happens next</h2>
+          <ol class="steps" data-steps>
+            <li class="step">
+              <h3>We reply within a day</h3>
+              <p>A real person emails you back to pick a time that works.</p>
+            </li>
+            <li class="step">
+              <h3>A 30-minute conversation</h3>
+              <p>In person, video, or phone. We listen and ask a few questions.</p>
+            </li>
+            <li class="step">
+              <h3>A clear, flat quote</h3>
+              <p>You'll get a monthly price in writing. Take your time deciding.</p>
+            </li>
+          </ol>
+          <ul class="contact-lines">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:hello@laymansledger.com">hello@laymansledger.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+15555550123">(555) 555-0123</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>[Your City], [Your State], and online everywhere</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="7" fill="#fff"/><path d="M8 11h18M8 17h11M8 23h9" stroke="#182338" stroke-width="2.2" stroke-linecap="round"/><path d="M19.5 23.2l2.6 2.6 5.4-6.8" fill="none" stroke="#3B7DD8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Layman's Ledger
+          </a>
+          <p>Bookkeeping for small businesses, in plain English. In person around [Your City], online everywhere else.</p>
+        </div>
+        <div>
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Say hello</h2>
+          <ul>
+            <li><a href="mailto:hello@laymansledger.com">hello@laymansledger.com</a></li>
+            <li><a href="tel:+15555550123">(555) 555-0123</a></li>
+            <li>[Your City], [Your State]</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span data-year>2026</span> Layman's Ledger</span>
+        <span>Bookkeeping services. We're not a CPA firm and don't give tax or legal advice.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
