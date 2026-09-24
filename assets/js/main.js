@@ -280,11 +280,10 @@
     });
   });
 
-  /* Sticky-note panels settle onto the page once */
+  /* The closing panel rises into place once */
   document.querySelectorAll("[data-cta]").forEach((el) => {
     gsap.from(el, {
       y: 36,
-      rotate: 1.6,
       duration: 1,
       ease: "power3.out",
       scrollTrigger: { trigger: el, start: "top 88%", once: true },
