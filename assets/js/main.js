@@ -141,7 +141,7 @@
       const action = form.getAttribute("action") || "";
       if (action.includes("YOUR_FORM_ID")) {
         status.classList.add("is-error");
-        status.innerHTML = 'This form isn\'t connected yet. Please email <a href="mailto:hello@laymansledger.com">hello@laymansledger.com</a> for now.';
+        status.innerHTML = 'This form isn\'t connected yet. Please email <a href="mailto:info@laymansledger.com">info@laymansledger.com</a> for now.';
         return;
       }
       const submit = form.querySelector('[type="submit"]');
@@ -159,7 +159,7 @@
         }
       } catch (err) {
         status.classList.add("is-error");
-        status.innerHTML = 'Your message didn\'t send. Check your connection and try again, or email <a href="mailto:hello@laymansledger.com">hello@laymansledger.com</a>.';
+        status.innerHTML = 'Your message didn\'t send. Check your connection and try again, or email <a href="mailto:info@laymansledger.com">info@laymansledger.com</a>.';
         submit.disabled = false;
         submit.textContent = label;
       }

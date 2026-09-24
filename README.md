@@ -14,27 +14,23 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 |------|--------------|
 | `index.html` | Hero with the animated sample report, jargon translator, services summary, how it works, local and remote, closing call to action |
 | `services.html` | Each service in detail, pricing approach, FAQ |
-| `about.html` | The story behind the name, how we talk about money, founder bio |
+| `about.html` | The story behind the name, how we talk about money |
 | `contact.html` | "Book a free call" form and what happens next |
 
-## Before launch: replace the placeholders
+## Before launch: check these
 
-Search the project for `[Your` and `555` to find them all.
-
-- **City and state:** `[Your City]`, `[Your State]` (every page, including the footer)
-- **Email:** `hello@laymansledger.com` (footer, contact page, and the fallback message in `assets/js/main.js`)
-- **Phone:** `(555) 555-0123` / `+15555550123`
-- **Founder:** `[Your Name]`, bio paragraphs and photo on `about.html`. The photo placeholder has a comment with the `<img>` tag to drop in.
 - **Domain:** `https://www.laymansledger.com/` in the structured data on `index.html`
-- **Software you support:** QuickBooks Online and Xero, Gusto for payroll (home and services pages). Edit if yours differ.
-- **Promises to check:** reports "by the 10th", "reply within one business day", flat monthly pricing. Keep only what you'll stand behind.
+- **Promises:** reports "by the 10th", "reply within one business day", flat monthly pricing, familiarity with Tennessee sales tax. Keep only what you'll stand behind.
+- **About page:** there's no founder bio or photo by choice. Add one later if you want a face on the site.
+
+Contact details used throughout: info@laymansledger.com, Nashville, Tennessee. Software named on the site: QuickBooks Online, NetSuite, Sage Intacct, and Gusto for payroll.
 
 ## Connect the contact form
 
 1. Create a free form at [formspree.io](https://formspree.io).
 2. In `contact.html`, replace `YOUR_FORM_ID` in the form's `action` with your form ID.
 
-Until then the form validates, but on submit it tells visitors to email you instead, so no messages are lost silently.
+Until then the form validates, but on submit it tells visitors to email info@laymansledger.com instead, so no messages are lost silently.
 
 ## Turn on testimonials
 
