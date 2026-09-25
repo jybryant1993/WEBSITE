@@ -98,6 +98,13 @@
 
   /* ---------- Contact form ---------- */
 
+  // Arriving from the Nonprofits page (?org=nonprofit) pre-selects the organization type.
+  const orgParam = new URLSearchParams(window.location.search).get("org");
+  if (orgParam) {
+    const orgInput = document.querySelector(`input[data-org="${CSS.escape(orgParam)}"]`);
+    if (orgInput) orgInput.checked = true;
+  }
+
   const form = document.querySelector("[data-contact-form]");
   if (form) {
     const status = form.querySelector(".form-status");

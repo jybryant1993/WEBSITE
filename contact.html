@@ -27,6 +27,7 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span class="visually-hidden">Menu</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="services.html">Services</a></li>
+        <li><a href="nonprofits.html">Nonprofits</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html" aria-current="page">Contact</a></li>
         <li><a class="btn btn--small" href="contact.html">Book a free call</a></li>
@@ -65,20 +66,27 @@
                 <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
               </div>
               <div class="field">
-                <label class="label" for="business">Business name <span class="opt">(optional)</span></label>
+                <label class="label" for="business">Business or organization name <span class="opt">(optional)</span></label>
                 <input class="input" id="business" name="business" type="text" autocomplete="organization">
               </div>
             </div>
             <div class="field">
-              <label class="label" for="kind">What does your business do? <span class="opt">(optional)</span></label>
+              <label class="label" for="kind">What does your business or organization do? <span class="opt">(optional)</span></label>
               <input class="input" id="kind" name="kind" type="text" aria-describedby="kind-help">
-              <p class="help" id="kind-help">A few words is plenty, like "landscaping" or "two coffee shops".</p>
+              <p class="help" id="kind-help">A few words is plenty, like "landscaping", "two coffee shops", or "youth mentoring".</p>
             </div>
+            <fieldset class="chips">
+              <legend class="label">You're reaching out for… <span class="opt">(optional)</span></legend>
+              <label class="chip"><input type="radio" name="org" value="A small business"><span>A small business</span></label>
+              <label class="chip"><input type="radio" name="org" value="A nonprofit" data-org="nonprofit"><span>A nonprofit</span></label>
+              <label class="chip"><input type="radio" name="org" value="Something else"><span>Something else</span></label>
+            </fieldset>
             <fieldset class="chips">
               <legend class="label">What can we help with? <span class="opt">(pick any)</span></legend>
               <label class="chip"><input type="checkbox" name="help" value="Monthly bookkeeping"><span>Monthly bookkeeping</span></label>
               <label class="chip"><input type="checkbox" name="help" value="Catch-up or cleanup"><span>Catch-up or cleanup</span></label>
               <label class="chip"><input type="checkbox" name="help" value="Payroll"><span>Payroll</span></label>
+              <label class="chip"><input type="checkbox" name="help" value="Nonprofit accounting or grants"><span>Nonprofit accounting or grants</span></label>
               <label class="chip"><input type="checkbox" name="help" value="Controller or CFO support"><span>Controller or CFO support</span></label>
               <label class="chip"><input type="checkbox" name="help" value="System setup or migration"><span>System setup or migration</span></label>
               <label class="chip"><input type="checkbox" name="help" value="Pricing and profitability"><span>Pricing and profitability</span></label>
@@ -149,12 +157,13 @@
             <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="7" fill="#fff"/><path d="M8 11h18M8 17h11M8 23h9" stroke="#232323" stroke-width="2.2" stroke-linecap="round"/><path d="M19.5 23.2l2.6 2.6 5.4-6.8" fill="none" stroke="#B8892B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Layman's Ledger
           </a>
-          <p>Bookkeeping and advisory for small businesses, in plain English. In person around Nashville, online everywhere else.</p>
+          <p>Bookkeeping and advisory for small businesses and nonprofits, in plain English. In person around Nashville, online everywhere else.</p>
         </div>
         <div>
           <h2>Pages</h2>
           <ul>
             <li><a href="services.html">Services</a></li>
+            <li><a href="nonprofits.html">Nonprofits</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
