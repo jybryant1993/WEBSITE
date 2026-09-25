@@ -287,6 +287,16 @@
     });
   });
 
+  /* The difference: jargon gets struck through, then the plain version is written in */
+  document.querySelectorAll("[data-dx]").forEach((grid) => {
+    const tl = gsap.timeline({ scrollTrigger: { trigger: grid, start: "top 75%", once: true } });
+    grid.querySelectorAll(".dx-card").forEach((card, i) => {
+      const at = i * 0.5;
+      tl.fromTo(card.querySelector(".dx-jargon"), { backgroundSize: "0% 3px" }, { backgroundSize: "100% 3px", duration: 0.7, ease: "power1.inOut" }, at)
+        .fromTo(card.querySelector(".dx-plain"), { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.9, ease: "power1.inOut" }, at + 0.55);
+    });
+  });
+
   /* The closing panel rises into place once */
   document.querySelectorAll("[data-cta]").forEach((el) => {
     gsap.from(el, {
