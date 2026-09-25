@@ -20,7 +20,7 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 ## Before launch: check these
 
 - **Domain:** `https://www.laymansledger.com/` in the structured data on `index.html`
-- **Promises:** reports "by the 10th", "reply within one business day", flat monthly bookkeeping pricing, advisory quoted up front (fixed project price or monthly retainer), familiarity with Tennessee sales tax. Keep only what you'll stand behind.
+- **Promises:** reports "by the 10th", "reply within one business day", flat monthly bookkeeping pricing, advisory quoted up front (fixed project price or monthly retainer), familiarity with Tennessee sales tax, SBA loan expertise (7(a), 504, Express, microloans). Keep only what you'll stand behind.
 - **About page:** there's no founder bio or photo by choice. Add one later if you want a face on the site.
 
 Contact details used throughout: info@laymansledger.com, Nashville, Tennessee. Software named on the site: QuickBooks Online, NetSuite, Sage Intacct, and Gusto for payroll.
