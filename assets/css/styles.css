@@ -599,13 +599,19 @@ a:hover { color: var(--ink); }
   padding: var(--space-4) 0;
   border-bottom: 1px solid var(--line-strong);
 }
-.service-row h3 { font-size: var(--step-3); }
+.service-row h3,
+.service-row h4 { font-size: var(--step-2); letter-spacing: -0.015em; line-height: 1.2; }
 .service-row p { color: var(--ink-soft); max-width: var(--measure); }
 .service-row .hand { font-size: 1.25rem; }
 
 @media (min-width: 48rem) {
   .service-row { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-5); align-items: baseline; }
 }
+
+.service-group + .service-group { margin-top: var(--space-6); }
+.group-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1rem; margin-bottom: var(--space-2); }
+.group-head h3 { font-size: var(--step-3); }
+.group-head .hand { font-size: 1.3125rem; }
 
 .more-link {
   display: inline-flex;
@@ -726,9 +732,9 @@ a:hover { color: var(--ink); }
   border-top: 2px solid var(--ink);
   scroll-margin-top: 6rem;
 }
-.service-detail h2 { font-size: var(--step-4); }
+.service-detail .svc-title { font-size: var(--step-3); letter-spacing: -0.02em; }
 .service-detail .lede { margin-top: var(--space-2); }
-.service-detail h3 { font-size: var(--step-1); font-weight: 600; margin-bottom: var(--space-1); }
+.service-detail h4 { font-size: var(--step-1); font-weight: 600; letter-spacing: -0.01em; margin-bottom: var(--space-1); }
 .service-detail ul { margin: 0; padding-left: 1.25rem; color: var(--ink-soft); }
 .service-detail li + li { margin-top: 0.375rem; }
 .service-detail li::marker { color: var(--gold); }
@@ -737,6 +743,16 @@ a:hover { color: var(--ink); }
   .service-detail { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-5); }
   .service-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+.toc-groups { display: grid; gap: var(--space-3); margin-top: var(--space-4); }
+.toc-label { font-weight: 600; margin-bottom: 0.5rem; }
+.toc-groups .toc { margin-top: 0; }
+@media (min-width: 60rem) { .toc-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-5); } }
+
+.group-intro { padding-block: var(--space-6) var(--space-3); scroll-margin-top: 6rem; }
+.group-intro:first-child { padding-top: 0; }
+.group-intro h2 { font-size: var(--step-5); letter-spacing: -0.03em; }
+.group-intro .lede { margin-top: var(--space-2); }
 
 .toc { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: var(--space-4) 0 0; padding: 0; list-style: none; }
 .toc a {

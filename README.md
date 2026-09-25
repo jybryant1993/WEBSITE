@@ -1,6 +1,6 @@
 # Layman's Ledger website
 
-Marketing site for Layman's Ledger, a bookkeeping service for small businesses that explains the books in plain English.
+Marketing site for Layman's Ledger: bookkeeping and financial advisory for small businesses, explained in plain English.
 
 Plain HTML, CSS and JavaScript. No build step: open `index.html` or serve the folder with any static host (GitHub Pages, Netlify, Cloudflare Pages).
 
@@ -12,15 +12,15 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 | File | What's on it |
 |------|--------------|
-| `index.html` | Hero with the animated sample report, jargon translator, services summary, how it works, local and remote, closing call to action |
-| `services.html` | Each service in detail, pricing approach, FAQ |
+| `index.html` | Hero with the animated sample report, jargon translator, bookkeeping and advisory summary, how it works, local and remote, closing call to action |
+| `services.html` | Bookkeeping (monthly, cleanup, payroll, tax-time handoff) and advisory (fractional controller and CFO, systems and data cleanup, pricing and profitability, financing and loan prep) in detail, pricing approach, FAQ |
 | `about.html` | The story behind the name, how we talk about money |
 | `contact.html` | "Book a free call" form and what happens next |
 
 ## Before launch: check these
 
 - **Domain:** `https://www.laymansledger.com/` in the structured data on `index.html`
-- **Promises:** reports "by the 10th", "reply within one business day", flat monthly pricing, familiarity with Tennessee sales tax. Keep only what you'll stand behind.
+- **Promises:** reports "by the 10th", "reply within one business day", flat monthly bookkeeping pricing, advisory quoted up front (fixed project price or monthly retainer), familiarity with Tennessee sales tax. Keep only what you'll stand behind.
 - **About page:** there's no founder bio or photo by choice. Add one later if you want a face on the site.
 
 Contact details used throughout: info@laymansledger.com, Nashville, Tennessee. Software named on the site: QuickBooks Online, NetSuite, Sage Intacct, and Gusto for payroll.
