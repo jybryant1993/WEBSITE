@@ -12,7 +12,7 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 | File | What's on it |
 |------|--------------|
-| `index.html` | Hero with the animated sample report, "You don't need to speak doctor" section (doctor analogy and the three questions every conversation answers), jargon translator, bookkeeping and advisory summary, how it works, nonprofit feature, local and remote, closing call to action |
+| `index.html` | Hero with the animated sample report, "Good numbers, lost in translation" section (origin story, doctor comparison, and the three questions every conversation answers), jargon translator, bookkeeping and advisory summary, how it works, nonprofit feature, local and remote, closing call to action |
 | `services.html` | Bookkeeping (monthly, cleanup, payroll, tax-time handoff) and advisory (fractional controller and CFO, systems and data cleanup, pricing and profitability, financing and loan prep) in detail, pricing approach, FAQ |
 | `nonprofits.html` | Nonprofit landing page: animated sample board report, nonprofit jargon translator, services (fund accounting, board reports, audit prep, Form 990 support, budgets, systems), who we help, FAQ |
 | `about.html` | The story behind the name, how we talk about money |
