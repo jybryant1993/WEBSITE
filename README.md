@@ -39,7 +39,7 @@ Until then the form validates, but on submit it tells visitors to email info@lay
 ## Design notes
 
 - **Direction:** the plain-English monthly report. White paper, charcoal ink (`#232323`), a gold pencil (`#B8892B`) for marks, graphite handwriting (`#6B6055`) for notes, and a gold tab (`#EBCB7C`) for the things you mustn't forget. Charcoal and gold (`#1C1C1C` / `#E6C77A`) go dark only in the closing panel and footer.
-- **Type:** Bricolage Grotesque for everything, with tabular figures for money. Kalam for handwritten notes only.
+- **Type:** Newsreader (serif) for headings, Figtree for body text and UI, with tabular figures for money. Kalam for handwritten notes only.
 - **Motion:** GSAP 3 (self-hosted in `assets/vendor/`). The one big moment is the hero report: numbers count up, the profit gets circled, notes write themselves in, and a sticky note lands. Elsewhere motion stays quiet: a scroll-drawn line through "How it works", a highlighter sweep on the About page, pencil strike-throughs in the jargon translator, smooth FAQ, and soft page cross-fades.
 - **Accessibility:** all content is visible without JavaScript; `prefers-reduced-motion` turns animation off; visible focus rings; 44px+ touch targets; text contrast at least 4.5:1.
 

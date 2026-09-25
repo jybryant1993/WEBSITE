@@ -25,7 +25,8 @@
   --success: #1f7a4d;
 
   /* Type */
-  --font-sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Newsreader", ui-serif, Georgia, serif;
   --font-hand: "Kalam", "Segoe Print", "Bradley Hand", cursive;
 
   /* Classic typographic scale, rem based on a 16px root */
@@ -94,14 +95,20 @@ img, svg { display: block; max-width: 100%; }
 
 h1, h2, h3, h4 {
   margin: 0;
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
   line-height: 1.08;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.02em;
   text-wrap: balance;
 }
 
-h1 { font-size: var(--step-5); font-variation-settings: "wdth" 92; letter-spacing: -0.022em; line-height: 1.04; }
-h2 { font-size: var(--step-4); font-variation-settings: "wdth" 94; letter-spacing: -0.02em; }
+/* Small label-style headings stay in the sans */
+.footer-grid h2,
+.service-detail h4 { font-family: var(--font-sans); letter-spacing: 0; }
+
+h1 { font-size: var(--step-5); letter-spacing: -0.025em; line-height: 1.02; }
+h2 { font-size: var(--step-4); letter-spacing: -0.02em; }
 h3 { font-size: var(--step-2); letter-spacing: -0.015em; line-height: 1.2; }
 
 p { margin: 0; text-wrap: pretty; }
@@ -343,7 +350,7 @@ a:hover { color: var(--ink); }
   align-items: center;
 }
 
-.hero-copy h1 { max-width: 12ch; }
+.hero-copy h1 { max-width: none; font-size: clamp(2.75rem, 1.6rem + 3.4vw, 4.25rem); }
 .hero-copy h1 .line { display: block; }
 .hero-copy .lede { margin-top: var(--space-3); }
 
@@ -751,7 +758,7 @@ a:hover { color: var(--ink); }
 
 .group-intro { padding-block: var(--space-6) var(--space-3); scroll-margin-top: 6rem; }
 .group-intro:first-child { padding-top: 0; }
-.group-intro h2 { font-size: var(--step-5); letter-spacing: -0.03em; }
+.group-intro h2 { font-size: var(--step-5); letter-spacing: -0.025em; }
 .group-intro .lede { margin-top: var(--space-2); }
 
 .toc { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: var(--space-4) 0 0; padding: 0; list-style: none; }
@@ -817,7 +824,7 @@ a:hover { color: var(--ink); }
   box-shadow: var(--shadow-paper);
   transform: rotate(0.8deg);
 }
-.definition dt { font-size: var(--step-3); font-weight: 700; letter-spacing: -0.02em; }
+.definition dt { font-family: var(--font-serif); font-size: var(--step-3); font-weight: 600; letter-spacing: -0.02em; }
 .definition dt small { display: block; margin-top: 0.25rem; font-size: 1rem; font-weight: 400; color: var(--ink-soft); letter-spacing: 0; font-style: italic; }
 .definition dd { margin: var(--space-2) 0 0; }
 .definition .hand { display: block; margin-top: var(--space-2); font-size: 1.25rem; }
