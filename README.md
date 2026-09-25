@@ -26,6 +26,16 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 Contact details used throughout: info@laymansledger.com, Nashville, Tennessee. Software named on the site: QuickBooks Online, NetSuite, Sage Intacct, and Gusto for payroll.
 
+## When the tax arm launches
+
+Today the site says Layman's Ledger *supports* tax filings but doesn't file them. When you start filing (1040s, simple business returns, Form 990s), update these spots:
+
+- `nonprofits.html`: the "Form 990 support" service row and the "Do you file our Form 990?" FAQ
+- `index.html`: "Audit prep and Form 990 support" in the nonprofit feature
+- `services.html`: the "Tax-time handoff" service ("We don't file your taxes…") and the "Do you do taxes?" FAQ
+- Footer on every page: "We're not a CPA firm and don't give tax or legal advice" (reword, especially if you become an Enrolled Agent)
+- If it launches as Layman's Taxes / Layman's Ledger Tax, add a Taxes page to the nav and point `laymanstaxes.com` at it
+
 ## Connect the contact form
 
 1. Create a free form at [formspree.io](https://formspree.io).
