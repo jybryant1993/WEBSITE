@@ -370,6 +370,10 @@ a:hover { color: var(--ink); }
 @media (min-width: 64rem) {
   .hero-grid { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: var(--space-5); }
 }
+/* Small laptops: give the headline an even share so its lines don't wrap */
+@media (min-width: 64rem) and (max-width: 79.99rem) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
 
 /* ---------- The report (signature element) ---------- */
 
@@ -462,6 +466,12 @@ a:hover { color: var(--ink); }
     padding: 1rem 0;
   }
   .report-note { margin-top: 0; }
+}
+/* Small laptops: the report column is narrower, so notes sit under each row */
+@media (min-width: 64rem) and (max-width: 79.99rem) {
+  .report-row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "label amount" "note note"; }
+  .report-note { margin-top: 0.125rem; }
+  .report-note .arrow { display: none; }
 }
 
 .sticky-note {
